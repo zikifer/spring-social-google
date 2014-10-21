@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springframework.social</groupId>
+  <artifactId>spring-social-google</artifactId>
+  <versioning>
+    <release>1.0.0.BUILD-PERC</release>
+    <versions>
+      <version>1.0.0.BUILD-PERC</version>
+    </versions>
+    <lastUpdated>20141021162933</lastUpdated>
+  </versioning>
+</metadata>

@@ -35,6 +35,26 @@ public class PostActivity extends Activity {
 		access.setDomainRestricted(true);
 	}
 
+
+	
+	public PostActivity(String message, List<PostAttachment> attachments) {
+        object = new PostObject();
+        object.setOriginalContent(message);
+        object.setAttachments(attachments);
+
+        PostAclResource aclResource = new PostAclResource();
+        aclResource.setType("domain");
+
+        List<PostAclResource> items = new ArrayList<PostAclResource>();
+        items.add(aclResource);
+
+        access = new PostAcl();
+        access.setItems(items);
+        access.setDomainRestricted(true);
+    }
+
+
+	
 	@Override
 	public String getContent() {
 		return object.getOriginalContent();

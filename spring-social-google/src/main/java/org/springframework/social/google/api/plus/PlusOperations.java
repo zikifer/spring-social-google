@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 package org.springframework.social.google.api.plus;
-
+import java.util.List;
 import org.springframework.social.google.api.plus.moments.Moment;
 import org.springframework.social.google.api.plus.moments.MomentQueryBuilder;
 import org.springframework.social.google.api.plus.moments.MomentsPage;
+import org.springframework.social.google.api.plus.posts.PostAttachment;
 
 /**
  * Defines operations for searching and retrieving Google+ activities, comments
@@ -204,4 +205,21 @@ public interface PlusOperations {
 	 */
 	Activity insertActivity(String message);
 	 
+	 /**
+     * 
+     * Creates a post (as an activity) with only the message in the body.
+     * 
+     * @param message
+     *              The message to be posted
+     * @param attachements 
+     *       list of attachments with urls
+     * @return {@link ActivitiesPage} of newly created activity
+     *
+     */ 
+    default Activity insertActivity(String message, List<PostAttachment> attachements){
+        //stub
+        return null;
+    }
+
+	
 }

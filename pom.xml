@@ -84,7 +84,7 @@
     <repositories>
         <repository>
             <id>central</id>
-            <url>http://repo-man.cloud.percussion.com:8081/nexus/content/groups/public/</url>
+            <url>http://repo-man.stage.crescendocontent.services:8081/nexus/content/groups/public/</url>
         </repository>
     </repositories>
 

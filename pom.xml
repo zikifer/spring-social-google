@@ -60,7 +60,7 @@
                 <artifactId>maven-antrun-plugin</artifactId>
                 <configuration>
                     <tasks>
-                        <copy file="spring-social-google/build/libs/spring-social-google-2.0.0.BUILD-PERC.jar"
+                        <copy file="spring-social-google/build/libs/spring-social-google-2.1.0.BUILD-PERC.jar"
                               todir="target" overwrite="true" verbose="true"/>
                     </tasks>
                 </configuration>
